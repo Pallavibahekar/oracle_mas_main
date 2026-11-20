@@ -11,6 +11,18 @@ Oracle MAS is a framework for building intelligent, collaborative multi-agent sy
 - **Scale efficiently** with modular, distributed architecture
 - **Adapt dynamically** to changing requirements and environments
 
+## 🖥️ Web Console (frontend)
+
+A standalone React + TypeScript console lives in [`frontend/`](./frontend/README.md). It demonstrates agent routing, streamed agent activity and run history **without requiring AWS credentials, Qdrant or Neo4j**:
+
+```bash
+cd frontend
+npm install
+npm run dev   # http://localhost:5173
+```
+
+It talks to a typed mock event stream that can later be swapped for the real FastAPI SSE endpoint. Interview talking points are in [`docs/FRONTEND_INTERVIEW_NOTES.md`](./docs/FRONTEND_INTERVIEW_NOTES.md).
+
 ## ✨ Key Features
 
 ### 🤝 Agent-to-Agent Communication
